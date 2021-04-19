@@ -12,9 +12,17 @@
   "npmScope": "blog-fab",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NGQ1NmRkNjEtOGE1YS00NGRjLTk1ZTItNGQ3ZDUzYmRkNzZlfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "blog-fab-e2e": {
       "tags": [],
-      "implicitDependencies": ["blog-fab"]
+      "implicitDependencies": [
+        "blog-fab"
+      ]
     },
     "api": {
       "tags": []
